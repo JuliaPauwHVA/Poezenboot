@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Poezenboot - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="kleur">
+    <header>
+        <a href="home.html"><img src="image/logo.png" alt="Logo"></a>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <section class="poezenboot">
+            <div class="tekst-poezenboot">
+                <h2>De Poezenboot</h2>
+                <p>Dit initiatief spreekt mij aan omdat ik zelf heel erg van katten houd en dit is een opvang voor
+                    katten die
+                    gevonden worden op straat.</p>
+            </div>
+            <div class="image-poezenboot">
+        <img src="image/slapende-kat.png" alt="Slapende Kat" id="play-audio">
+        
+        <audio id="spinnen">
+            <source src="audio/spinnen-kat.mp3" type="audio/mpeg">
+            Je browser ondersteunt dit audio-element niet.
+        </audio>
+    </div>
+
+    <script>
+        const img = document.getElementById('play-audio');
+        const audio = document.getElementById('spinnen');
+
+        img.addEventListener('click', () => {
+            audio.play();
+        });
+    </script>
+        </section>
+
+        <section class="poezenboot">
+            <div class="image-poezenboot">
+                <img src="image/zittende-kat.png" alt="Zittende Kat">
+            </div>
+            <div class="tekst-poezenboot">
+                <h2>Doneren</h2>
+                <p>Sinds 1966 doet dit initiatief dit werk. Ze krijgen geen subsidie, daarom zijn ze heel blij als je
+                    doneert.
+                </p>
+                <a href="https://depoezenboot.nl/nl/doneren">Doneren</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul class="footer-nav">
+                <li><a href="home.html"><img src="image/home-button.png" alt="Home"></a></li>
+                <li><a href="katten.html"><img src="image/katten-button.png" alt="Katten"></a></li>
+                <li><a href="bezoeken.html"><img src="image/bezoeken-button.png" alt="Bezoeken"></a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
