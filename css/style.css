@@ -14,9 +14,7 @@ body {
     padding: 0;
 }
 
-h1,
-h2,
-a {
+h1, h2, a {
     font-family: 'rubik-bubbles';
 }
 
@@ -107,12 +105,19 @@ body.kleur {
     flex: 1;
     background-color: #fffde9;
     border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 0.6em;
+    padding: 0.6em;
     width: 100%;
     max-width: 330px;
-    text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tekst-poezenboot h2 {
+    text-align: center;
+}
+
+.tekst-poezenboot p {
+    text-align: left;
 }
 
 .tekst-poezenboot a {
@@ -125,19 +130,64 @@ body.kleur {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.image-poezenboot {
+/* Zittende kat */
+.image-zittende-kat {
     flex: 1;
     text-align: center;
 }
 
-.image-poezenboot img {
+.image-zittende-kat img {
     max-width: 100%;
     height: auto;
 }
 
-.image-poezenboot audio {
+/* Slapende kat */
+.image-slapende-kat {
+    flex: 1;
+    text-align: center;
+}
+
+.image-slapende-kat img {
+    max-width: 100%;
+    height: auto;
+    animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.image-slapende-kat audio {
     display: none;
 }
+
+/* Bewegende muis */
+.muis {
+    position: absolute;
+    bottom: 10%;
+    animation: zigzag 18s infinite;
+}
+
+.muis img {
+    width: 60px;
+}
+
+@keyframes zigzag {
+    0% { transform: translate(-150%, 40%) }
+    25% { transform: translate(50%, -20%) }
+    50% { transform: translate(250%, 10%) }
+    75% { transform: translate(450%, -20%) }
+    100% { transform: translate(650%, 40%) }
+}
+
 
 /* Katten pagina */
 .katten-container {
@@ -150,18 +200,17 @@ body.kleur {
 .katten {
     background-color: #fffde9;
     border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 0.6em;
+    padding: 0.6em;
     width: 100%;
     max-width: 330px;
-    text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .katten-image {
     width: 80px;
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 0.6em;
     border-radius: 50%;
     border: 2px solid #eee;
 }
@@ -169,23 +218,25 @@ body.kleur {
 .katten h2 {
     font-size: 1.5em;
     color: #000;
-    margin: 5px 0;
+    margin: 0.3em 0;
+    text-align: center;
 }
 
 .katten p {
     font-size: 1em;
     color: #000;
+    text-align: left;
 }
 
 /* Bezoeken */
 .bezoeken {
     background-color: #fffde9;
     border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 0.6em;
+    padding: 0.6em;
     width: 100%;
     max-width: 330px;
-    text-align: center;
+    text-align: left;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -193,28 +244,28 @@ body.kleur {
     display: block;
     max-width: 100%;
     height: auto;
-    margin: 0 auto 10px;
+    margin: 0 auto 0.6em;
     object-fit: cover;
 }
 
 .reserveren {
     display: block;
     text-decoration: none;
+    text-align: center;
     background-color: #ccd5ae;
     color: #000;
     padding: 0.5em 2em;
     border-radius: 0.5em;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    /* Schaduw  */
 }
 
 /* Footer */
 footer {
     background-color: #ccd5ae;
-    padding: 10px 0;
+    padding: 0.6em 0;
     text-align: center;
     position: sticky;
-    bottom: 0px;
+    bottom: 0em;
 }
 
 .footer-nav {
