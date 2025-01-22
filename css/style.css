@@ -172,7 +172,7 @@ body.kleur {
 /* Bewegende muis */
 .muis {
     position: absolute;
-    bottom: 5%;
+    bottom: 13%;
     animation: zigzag 18s infinite;
     overflow: hidden;
 }
