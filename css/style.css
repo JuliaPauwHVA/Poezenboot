@@ -173,7 +173,7 @@ body.kleur {
 .muis {
     position: absolute;
     bottom: 13%;
-    animation: zigzag 18s infinite;
+    animation: zigzag 10s infinite;
     overflow: hidden;
 }
 
