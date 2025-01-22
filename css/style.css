@@ -174,6 +174,7 @@ body.kleur {
     position: absolute;
     bottom: 10%;
     animation: zigzag 18s infinite;
+    overflow: hidden;
 }
 
 .muis img {
@@ -181,11 +182,11 @@ body.kleur {
 }
 
 @keyframes zigzag {
-    0% { transform: translate(-150%, 40%) }
-    25% { transform: translate(50%, -20%) }
-    50% { transform: translate(250%, 10%) }
-    75% { transform: translate(450%, -20%) }
-    100% { transform: translate(650%, 40%) }
+    0% { transform: translate(-150%, 0vh); }
+    25% { transform: translate(50%, -5vh); }
+    50% { transform: translate(250%, 5vh); }
+    75% { transform: translate(450%, -5vh); }
+    100% { transform: translate(510%, 0vh);}
 }
 
 
