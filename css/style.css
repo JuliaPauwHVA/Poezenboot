@@ -58,7 +58,7 @@ body.afbeelding {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('pootjes-achtergrond.png');
+    background-image: url('pootjes-achtergrond.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -134,10 +134,11 @@ body.kleur {
 .image-zittende-kat {
     flex: 1;
     text-align: center;
+    margin-right: 1.2em;
 }
 
 .image-zittende-kat img {
-    max-width: 100%;
+    max-width: 150%;
     height: auto;
 }
 
