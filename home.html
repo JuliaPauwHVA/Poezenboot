@@ -10,7 +10,7 @@
 
 <body class="kleur">
     <header>
-        <a href="home.html"><img src="image/logo.png" alt="Logo"></a>
+        <a href="index.html"><img src="image/logo.png" alt="Logo"></a>
     </header>
     <main>
         <h1>Poezenboot</h1>
@@ -20,27 +20,26 @@
         <section class="poezenboot">
             <div class="tekst-poezenboot">
                 <h2>De Poezenboot</h2>
-                <p>Dit initiatief spreekt mij aan omdat ik zelf heel erg van katten houd en dit is een opvang voor
-                    katten die
-                    gevonden worden op straat.</p>
+                <p>Dit initiatief spreekt me aan, omdat ik zelf een enorme kattenliefhebber ben. Ze bieden een
+                    veilig thuis aan katten die op straat gevonden worden.</p>
             </div>
             <div class="image-slapende-kat">
-        <img src="image/slapende-kat.png" alt="Slapende Kat" id="play-audio">
-        
-        <audio id="spinnen">
-            <source src="audio/spinnen-kat.mp3" type="audio/mpeg">
-            Je browser ondersteunt dit audio-element niet.
-        </audio>
-    </div>
+                <img src="image/kat-slaap.png" alt="Slapende Kat" id="play-audio">
 
-    <script>
-        const img = document.getElementById('play-audio');
-        const audio = document.getElementById('spinnen');
+                <audio id="spinnen">
+                    <source src="audio/spinnen-kat.mp3" type="audio/mpeg">
+                    Je browser ondersteunt dit audio-element niet.
+                </audio>
+            </div>
 
-        img.addEventListener('click', () => {
-            audio.play();
-        });
-    </script>
+            <script>
+                const img = document.getElementById('play-audio');
+                const audio = document.getElementById('spinnen');
+
+                img.addEventListener('click', () => {
+                    audio.play();
+                });
+            </script>
         </section>
 
         <section class="poezenboot">
@@ -49,9 +48,8 @@
             </div>
             <div class="tekst-poezenboot">
                 <h2>Doneren</h2>
-                <p>Sinds 1966 doet dit initiatief dit werk. Ze krijgen geen subsidie, daarom zijn ze heel blij als je
-                    doneert.
-                </p>
+                <p>De Poezenboot werkt al sinds 1966 zonder subsidies en is volledig afhankelijk van donaties, waardoor
+                    elke bijdrage enorm waardevol is.</p>
                 <a href="https://depoezenboot.nl/nl/doneren">Doneren</a>
             </div>
         </section>
